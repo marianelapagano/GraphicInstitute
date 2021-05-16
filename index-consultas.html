@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Graphic Institute</title>
+	<meta name="description" content="Graphic Institute: Formación en diseño gráfico, publucidad y nuevas tecnologías de la información">
+	<!--Codificación-->
+	<meta charset="UTF-8">
+	<!-- CSS de Bootstrap-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- CSS de estilos-->
+	<link rel="stylesheet" href="css/style.css">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!-- Robots -->
+    <meta name="robots"  content="index,follow"> 
+    <!-- Fuentes  -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="overlay"> 
+				<div class="elementoPrecarga">
+					<img src="imagenes/logo-graphic-institute.svg" alt="">
+				</div>
+	</div>
+
+	<div class="contenedor">
+	
+	<header id="encabezado"><!--HEADER PPAL DE LA PÁGINA-->
+	<div class="container">
+		<div class="row">
+
+			<div class="logo col-12 col-sm-12 col-md-6">
+				<a href="#"> <img src="imagenes/logo-graphic-institute.svg" alt=""></a>
+			</div> 
+			
+			<div class="redes col-12 col-sm-12 col-md-6">
+			<ul>
+				<li> <a href="https://www.youtube.com/"> <img src="imagenes/youtube.png" alt=""></a></li>
+				<li> <a href="https://twitter.com/"> <img src="imagenes/twitter.png" alt=""></a></li>
+				<li> <a href="https://www.facebook.com/"> <img src="imagenes/facebook.png" alt=""></a></li>
+			</ul>
+			</div> 
+
+			<div>
+				<p>Formación en diseño gráfico, publicidad</p> 
+		
+			    <p>y nuevas tecnologías de la información</p>
+			</div>
+
+			
+		</div>
+	</div>
+
+
+	<div class="container">	
+
+		<div class="row">
+				<nav class="menu col navbar navbar-expand-lg navbar-dark">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="index.html">Home</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="index-cursos.html">Cursos de Diseño y Publidad</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="index-donde-estamos.html">Dónde Estamos</a>
+				      </li>
+				      <li class="nav-item active">
+				        <a class="nav-link current" href="index-consultas.html">Consultas</a>
+				      </li>				      
+				    </ul>
+				  </div>
+				</nav>
+				
+		</div> 
+			
+	</div> 	
+	</header><!--FIN HEADER-->
+
+	<main> 
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<header class="titulo">
+					<h1>Consultas</h1>
+					<p>Si tienes cualquier duda sobre nuestros cursos puedes completar el siguiente formulario. Para otras consultas contacta con nosotros mediante el teléfono o correo electrónico que figura más abajo.</p>
+        			</header>
+        		</div>	
+        	</div>	
+		</div>	
+
+
+		<div class="container">
+				<div class="row">
+					<div class="formTittle col-12">
+						<h2>Formulario de consulta sobre cursos</h2>
+						<p>(Los campos marcados con un <span>*</span> son obligatorios)</p>
+					
+				    </div>
+
+				    <div class="col-12">
+				    	<form action="procesar-formulario.php"
+				    		  method="post">
+
+
+				    		<div class="filaformulario">
+				    		<label for="id-nombre">Nombre:<span>*</span></label>
+				    			<input 
+				    				type="text" 
+				    				id="id-nombre"
+				    				name="nombre"
+				    				placeholder="Tu Nombre"
+				    				autofocus
+				    				required>
+				    		</div>
+
+				    		<div class="filaformulario">
+				    			<label for="id-email">Correo electrónico:<span>*</span></label>
+				    			<input 
+				    				type="email" 
+				    				id="id-email"
+				    				name="email-usuario"
+				    				placeholder="Tu email"
+				    				required>
+				    		</div>
+
+				    		<div class="filaformulario">
+				    			<label for="id-telefono">Teléfono:<span>*</span></label>
+				    			<input 
+				    				type="text" 
+				    				id="id-telefono"
+				    				name="telefono"
+				    				placeholder="Tu Teléfono"
+				    				pattern="(?:[+]?(?:[0-9]{1,5}|\\x28[0-9]{1,5}\\x29)[ ]?)?[0-9]{2}(?:[0-9][ ]?){6}[0-9]"
+				    				required>
+				    		</div>
+				    	
+
+				    		<div class="filaformulario">
+				    				<label for="id-choice">Curso en el que estás interesado:<span>*</span></label>
+				    				<select required name="choice" id="id-choice">
+				    				<option selected value="">Elije una opción</option>
+				    				<option value="1">Ilustración Digital</option>
+				    				<option value="2">Maquetación Gráfica</option>
+				    				<option value="3">Edición de Video</option>
+				    				<option value="4">Edición de Audio</option>
+				    				<option value="5">Gestión del Color</option>
+				    				<option value="6">Técnicas Creativas</option>
+				    				</select>
+				    		</div>
+
+				    		
+				    		<div class="filaformulario">
+				    			<label for="id-comentarios">Comentarios:</label>
+				    			<br>
+				    			<textarea name="comentarios" id="id-comentarios" cols="30" rows="10"></textarea>
+				    		</div>
+
+
+				    		<div class="filaformulario">				    		
+				    			<input 
+				    				type="checkbox"
+				    				name="aceptaclausulas"
+				    				id="acepta-clausulas"
+				    				value="clausulas"
+				    				required>
+				    			<label for="acepta-clausulas">Acepto las cláusulas de protección de datos <a href="#" class="botonModal">Leer Nota Legal</a></label>
+				    		</div>
+
+				    		<div class="filaformulario">
+				    			<input type="submit" value="Enviar Formulario">
+				    		</div>
+
+				    		
+				    	</form>
+				    </div>
+				</div>
+		</div>
+
+	</main>
+		
+		<!-- HTML PANTALA MODAL -->
+    	<div class="fondoModal">
+			
+			<div class="contenedorModal">
+
+					<div class="contenidoModal">
+
+						<button class="btn btn-secondary pull-right cerrarModal">Cerrar</button>
+
+						<h2>Pólita de Privacidad y aviso legal</h2>
+						<h5>Política de privacidad</h5>
+						
+<p>A través de este sitio web no se recaban datos de carácter personal de los usuarios sin su conocimiento, ni se ceden a terceros.
+
+Con la finalidad de ofrecerle el mejor servicio y con el objeto de facilitar el uso, se analizan el número de páginas visitadas, el número de visitas, así como la actividad de los visitantes y su frecuencia de utilización. A estos efectos, la Agencia Española de Protección de Datos (AEPD) utiliza la información estadística elaborada por el Proveedor de Servicios de Internet.</p>
+						<h5>Aviso Legal</h5>
+						
+<p>Este portal, cuyo titular es la Agencia Española de Protección de Datos (AEPD), con NIF Q2813014D, domicilio en la calle Jorge Juan, nº6, 28001 Madrid, y teléfono 901 100 099, está constituido por los sitios web asociados a los dominios aepd.es, sedeagpd.gob.es, tudecideseninternet.es y redipd.org.</p>				
+					</div>  
+			</div> 
+		</div> 
+
+		
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="box">
+					<ul>
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Imágenes del Centro</a></li>
+						<li><a href="#">Premios</a></li>
+						<li><a href="#">Bolsa de Empleo</a></li>
+						<li><a href="#">Datos Legales</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="box2">
+					<p>&copy; Graphic Designer. Todos los derechos reservados.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+</div>
+
+</body>
+
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script  src="js/bootstrap.js"></script>	
+<script  src="js/functions.js"></script>
+
+</html>

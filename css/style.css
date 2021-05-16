@@ -1,0 +1,443 @@
+/*ESTILO PARA SRIPT OCULTAR PANTALLA DE CARGA*/
+
+@keyframes animaCArga{
+	0%{
+		opacity: 0;
+		transform: scale(0.7);
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.contenedor{
+	padding: 0em;
+	display:none; /* ocultamos el contenido incialmente */
+}
+
+.overlay{
+	position:fixed;
+	width: 100vw;
+    height: 100vh;
+	top:0;
+	left:0;
+
+	background:#1ABC9C;	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;						
+}
+
+.elementoPrecarga{
+	font-size: 3em;
+	font-weight: bold;
+	animation: animaCArga 0.4s;
+ 	animation-iteration-count: infinite;
+}
+
+
+
+/*ESTULOS HEADER COMÚN A TODAS LAS PÁGINAS*/
+
+#encabezado > div:nth-child(1){
+	background: linear-gradient(to bottom, black, transparent), url(../imagenes/cabecera.jpg) no-repeat right center;
+
+} 
+
+#encabezado .container{ 
+	padding-bottom: 4em;
+}
+
+#encabezado nav{
+	background: #D9D2D2;
+	padding-left: 3em;
+}
+
+#encabezado nav a{
+	font-size: 18px;
+	font-weight: 700;
+	color: black;
+	opacity: 0.7;
+	padding: 1.8em 2em;
+}
+
+#encabezado .logo{
+	padding: 2em;
+}
+
+.redes{
+	padding-top: 2em;
+	padding-right: 2em;
+}
+
+.redes li{
+	list-style-type: none;
+    display: inline-block;
+    float: right;
+    padding: 2em 0.5em;
+}
+
+#encabezado p{
+	background: black;
+	font-size: 25px;
+	font-weight: 300;
+	color: white;
+	opacity: 0.5;
+}
+
+#encabezado p:first-child{
+	margin-left: 4em;
+}
+
+#encabezado p:last-child{
+	margin-left: 6em;
+}
+
+
+/*ESTILOS PARA PÁGINA SELECIONADA*/
+
+.navbar{
+	padding: 0;
+}
+
+.active{
+	background: #1ABC9C;
+}
+
+.active .current{
+	color: white !important;
+}
+
+
+/*ESTILOS FOOTER COMÚN A TODAS LAS PÁGINAS*/
+
+footer{
+	background: #382E2E;
+}
+
+footer ul{
+	font-weight: 600;
+	color: #A7A2A2;
+}
+
+footer li{
+	display: inline-block;
+    border-right: 1px solid #A7A2A2;
+    padding: 0 1em;
+}
+
+footer a{
+	list-style-type: none;
+	text-decoration: none;
+	color: #A7A2A2;
+}
+
+.box{
+	padding-top: 40px; 
+	text-align: center;
+}
+
+.box2 {
+	font-weight: 600;
+	color: #6A5757;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+
+/*ESTILOS COMUNES A PARTE CENTRAL*/
+
+h1{
+	font-size: 50px;
+	font-weight: 300;
+	padding-left: 1.5em;
+}
+
+.titulo{
+	opacity: 0.5;
+}
+
+.titulo > p{
+	font-size: 18px;
+	font-weight: 700;
+	padding: 20px 0 30px 160px;
+}
+
+h2, h4, h5{
+	color: #1ABC9C;
+}
+
+h2{
+	font-weight: 700;
+}
+
+h4{
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	font-style: italic;
+	padding-bottom: 1.5em;
+}
+
+article{
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+article > p{
+	padding: 1.5em 2.5em 0.5em 0;
+	text-align: justify;
+	font-weight: 600;
+	opacity: 0.7;
+}
+
+.btn{
+	background: #958D8D;
+	text-transform: uppercase;
+	color: #E2D6D6;
+	border: none;
+}
+
+.btn:hover{
+	background: #958D8D;
+}
+
+/*ESTILOS PARA PARTE CENTRAL DE LA PÁGINA "HOME"*/
+
+article > img{
+	border: 5px solid #D7D5D5;
+	border-radius: 80px 20px 80px 0px;
+}
+
+/*************ACEPTAR COOKIES**************/
+
+#content-popup-cookies{
+	display:none;
+    position: fixed;
+	left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2000;
+    padding: 1.2em;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+#content-popup-cookies p{
+	margin:0.5em;
+	color: #EDEDED;
+	line-height: 1.5em;
+}
+
+#content-popup-cookies p strong, #content-popup-cookies a{
+	color: #C1DB35;
+}
+ 
+.content-content-popup-cookies {
+	width:80%;
+	margin:0 auto;
+	padding:0.5em;
+}
+ 
+ 
+.close-cookies {
+	position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+/*ESTILOS PARA PARTE CENTRAL DE LA PÁGINA "CURSOS"*/
+
+.cajaCursos{
+	display: inline-block;
+	text-align: center;
+	height: 450px;
+	width: 350px;
+	}
+
+.iconos{
+	border: none;
+	border-radius: 0px;
+	float: inherit;
+	width: 100px;
+	height: 100px;
+
+}
+
+/*ESTILOS PARA PARTE CENTRAL DE LA PÁGINA "DÓNDE ESTAMOS"*/
+
+figure{
+	padding-left: 3em;
+	padding-bottom: 1.5em;
+}
+
+address > p{
+	text-align: center;
+	font-size: 18px;
+	opacity: 0.7;
+}
+
+.address{
+	font-weight: 700;
+}
+
+.mail{
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+.mail a{
+	text-decoration: underline;
+	color: #857B7B;
+}
+
+/*ESTILOS PARA PARTE CENTRAL DE LA PÁGINA "CONSULTAS"*/
+span{
+	color: red;
+}
+
+.formTittle{
+	text-align: center;
+}
+
+form{
+	border: 1px solid grey;
+	border-radius: 20px;
+	background: #EEEEEE;
+	margin: 3em auto;
+	width: 60%;
+	padding: 1.5em;
+}
+
+.filaformulario {
+	margin: 1em;
+}
+
+label{
+	font-weight: 700;
+}
+
+label:last-child{
+	font-weight: 400;
+}
+
+input[type="text"]{
+	width: 100%;
+	height: 30px;
+	background-color: white;
+    text-align: left;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type="email"]{
+	width: 100%;
+	height: 30px;
+    background-color: white;
+    text-align: left;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+	width: 100%;
+	height: 40px;
+    background-color: #373737;
+    font-weight: 600;
+    color: grey;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+select{
+	width: 100%;
+	height: 30px;
+    background-color: white;
+    text-align: left;
+    border: none;
+    box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+    background-color: white;
+    text-align: left;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*ESTILOS PANTALLA MODAL*/
+
+.pull-right{
+	float: right;
+}
+
+.fondoModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.85);
+	display: none;  
+}
+
+.contenedorModal{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenidoModal {
+	display: none; 
+	flex-basis: 50%;
+	padding: 20px;
+	border-radius: 15px;				 			 
+	background: url('../imagenes/bg-app.jpg') no-repeat center / cover;	
+}
+
+
+/************** MEDIA QUERIES****************/
+@media screen and (max-width: 1200px){
+	article > img{
+		width: 90%;
+	}
+
+	.cajaCursos{
+		width: 90%;
+		height: 100%;
+	}
+
+	.iconos{
+	width: 90px;
+	height: 90px;
+
+}
+
+}
+
+@media screen and (max-width: 990px){
+	h1, h2, h4{
+		text-align: center;
+	}
+
+    article{
+		padding-top: 1em;
+		padding-bottom: 3em;
+}
+
+    article > p{
+		padding: 0.5em;
+		text-align: center;
+}
+
+	.titulo > p{
+		padding: 0.5em;
+}
+
+}
